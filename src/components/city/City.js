@@ -9,7 +9,7 @@ const City = (props) => {
       </p>
       <div className="weather-icon">
         <img
-          src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`}
           alt=""
         />
       </div>

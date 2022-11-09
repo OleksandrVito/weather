@@ -61,7 +61,7 @@ const HoursWeather = (props) => {
             new Date(item.dt * 1000).getUTCHours() + props.timezone / 60 / 60
           )}
           <img
-            src={`http://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
+            src={`https://openweathermap.org/img/wn/${item.weather[0].icon}.png`}
             alt="icon weather"
           />
           <p className="temp">{Math.round(item.main.temp)}°C</p>
