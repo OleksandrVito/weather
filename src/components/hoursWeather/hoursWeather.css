@@ -1,6 +1,7 @@
 .hours-weather-block {
   position: absolute;
-  top: calc(100vh - 150px);
+
+  top: 550px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
