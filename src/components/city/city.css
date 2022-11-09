@@ -1,0 +1,57 @@
+.city {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 150px;
+  font-size: 45px;
+  color: #cdd5c1;
+  width: 100vw;
+  height: calc(100vh - 150px);
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.dawn {
+  background: linear-gradient(#123352, #1d5372, #3885a2);
+}
+.morning {
+  background: linear-gradient(#8dcdba, #eee07a, #f0eebc);
+  color: #363c80;
+}
+.afternoon-1 {
+  background: linear-gradient(#f0eebc, #e6756f, #ee8049);
+  color: #fff;
+}
+.afternoon-2 {
+  background: linear-gradient(#ee8049, #facf62, #e6756f);
+  color: #fff;
+}
+.evening-1 {
+  background: linear-gradient(#facf62, #e6756f, #884186);
+  color: #fff;
+}
+.evening-2 {
+  background: linear-gradient(#291c6b, #4a257d, #884186);
+  color: #9eaf81;
+}
+.night-1 {
+  background: linear-gradient(#884186, #111642, #011548);
+}
+.night-2 {
+  background: linear-gradient(#111642, #1d5372, #123352);
+}
+
+.weather-icon {
+  padding-top: 20px;
+  padding-bottom: 0;
+}

@@ -1,0 +1,80 @@
+form {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+input {
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 0.8px;
+  font-size: 17px;
+  border: none;
+  padding: 5px;
+  padding-right: 25px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  /* line-height: 28px; */
+  border: 2px solid #999;
+  border-radius: 3px;
+  width: 200px;
+  color: rgb(196, 59, 59);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(255, 255, 255, 0.7);
+}
+input:focus {
+  border: 2px solid #cdd5c1;
+  outline: 2px solid white;
+}
+
+/* input:hover + button {
+  display: block;
+}
+input:focus + button {
+  display: block;
+} */
+
+input::placeholder {
+  color: #cdd5c1;
+}
+
+button {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #0d770dcc;
+  position: absolute;
+  background: #cdd5c180;
+  border: 1px solid #999;
+  border-radius: 3px;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0;
+  padding-bottom: 2px;
+}
+button:active {
+  opacity: 0.5;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration,
+input[type="search"]::-webkit-calendar-picker-indicator {
+  transform: translateX(20px) translateY(1px);
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+input[type="search"]::-webkit-calendar-picker-indicator {
+  transform: translateX(15px) translateY(-3px) scale(1.1);
+  padding-left: 5px;
+  padding-right: 0;
+  color: #c43b3b;
+}
