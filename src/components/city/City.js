@@ -2,7 +2,7 @@ import "./city.css";
 
 const City = (props) => {
   return (
-    <div className={`city ${props.bgGradient}`}>
+    <div className={`city`}>
       <h2>{props.city}</h2>
       <p>
         {props.day} {props.time}

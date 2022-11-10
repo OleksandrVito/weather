@@ -41,7 +41,9 @@ const InputSearch = (props) => {
       <input
         style={{ borderColor: colorBorder }}
         type="search"
-        placeholder="...search city here"
+        placeholder={
+          props.lang === "en" ? "search city here" : "пошук міста тут"
+        }
         list="cities"
         onChange={(event) => {
           getCitiesList(event.target.value).then((response) => {
@@ -53,7 +55,7 @@ const InputSearch = (props) => {
             setColorButton("#0d770dcc");
           } else {
             setColorBorder("#cdd5c1");
-            setColorButton("#cdd5c1");
+            setColorButton("rgba(205, 213, 193, 0.1)");
           }
         }}
       />
@@ -77,12 +79,14 @@ const InputSearch = (props) => {
             );
           } else {
             setColorBorder("#c43b3b");
-            setColorButton("#cdd5c1");
+            setColorButton("rgba(205, 213, 193, 0.1)");
           }
 
           if (/[а-я]/i.test(document.querySelector("input").value)) {
             props.setLang("ua");
             localStorage.setItem("lang", "ua");
+          } else if (!document.querySelector("input").value) {
+            return;
           } else {
             props.setLang("en");
             localStorage.setItem("lang", "en");

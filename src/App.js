@@ -85,15 +85,15 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={`App ${bgGradient}`}>
       <InputSearch
         setCoordinates={setCoordinates}
         setCity={setCity}
         setLang={setLang}
+        lang={lang}
       ></InputSearch>
       <City
         city={city}
-        bgGradient={bgGradient}
         temp={temp}
         description={description}
         day={day}
