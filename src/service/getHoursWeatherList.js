@@ -1,5 +1,4 @@
 const getHoursWeatherList = async (coordinates, lang) => {
-  // console.log(coordinates);
   const options = {
     method: "GET",
     headers: {},

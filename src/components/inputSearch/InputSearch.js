@@ -5,7 +5,7 @@ import "./inputSearch.css";
 
 const InputSearch = (props) => {
   const [list, setList] = useState([]);
-  const [colorButton, setColorButton] = useState("#cdd5c1");
+  const [colorButton, setColorButton] = useState("rgba(205, 213, 193, 0.1)");
   const [colorBorder, setColorBorder] = useState("#cdd5c1");
 
   const checkCity = (options, value) => {
@@ -41,14 +41,11 @@ const InputSearch = (props) => {
       <input
         style={{ borderColor: colorBorder }}
         type="search"
-        placeholder={
-          props.lang === "en" ? "search city here" : "пошук міста тут"
-        }
+        placeholder={props.lang === "en" ? "Search" : "Пошук"}
         list="cities"
         onChange={(event) => {
           getCitiesList(event.target.value).then((response) => {
             setList(response);
-            // console.log("new response", response);
           });
           if (check(document.querySelectorAll("option"), event.target.value)) {
             setColorBorder("#0d770dcc");

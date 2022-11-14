@@ -60,7 +60,7 @@ function App() {
 
     getHoursWeatherList(coordinates, lang).then((response) => {
       setHoursWeatherList(response.list);
-      console.log(response);
+      // console.log(response);
     });
   }, [coordinates]);
 

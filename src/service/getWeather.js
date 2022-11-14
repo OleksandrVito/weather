@@ -1,5 +1,4 @@
 const getWeather = async (coordinates, lang) => {
-  // console.log(coordinates);
   const options = {
     method: "GET",
     headers: {},
